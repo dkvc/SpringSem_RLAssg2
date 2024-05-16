@@ -1,0 +1,402 @@
+Using Expected Sarsa ...
+(Expected Sarsa) Episode 0: Length=8  Total return = -10.44 Energy Left = 0
+(Expected Sarsa) Episode 100: Length=50  Total return = -12.25 Energy Left = 0
+    Median100=-12.25 Variance100=6.789018959999998
+(Expected Sarsa) Episode 200: Length=50  Total return = -12.45 Energy Left = 10
+    Median100=-12.25 Variance100=5.264912750000001
+(Expected Sarsa) Episode 300: Length=50  Total return = -12.25 Energy Left = 10
+    Median100=-12.25 Variance100=0.8890661900000001
+(Expected Sarsa) Episode 400: Length=21  Total return = -9.79 Energy Left = 10
+    Median100=-12.25 Variance100=5.31263931
+(Expected Sarsa) Episode 500: Length=50  Total return = -12.65 Energy Left = 10
+    Median100=-12.25 Variance100=5.6092309899999995
+(Expected Sarsa) Episode 600: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=10.584852749999998
+(Expected Sarsa) Episode 700: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=0.8939077099999999
+(Expected Sarsa) Episode 800: Length=50  Total return = -12.45 Energy Left = 32
+    Median100=-12.25 Variance100=2.64109139
+(Expected Sarsa) Episode 900: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=4.685804910000001
+(Expected Sarsa) Episode 1000: Length=50  Total return = -12.649999999999999 Energy Left = 32
+    Median100=-12.25 Variance100=1.0084893899999998
+(Expected Sarsa) Episode 1100: Length=19  Total return = -10.0 Energy Left = 32
+    Median100=-12.25 Variance100=3.547283309999999
+(Expected Sarsa) Episode 1200: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=3.8743033899999997
+(Expected Sarsa) Episode 1300: Length=9  Total return = -10.45 Energy Left = 32
+    Median100=-12.25 Variance100=3.48907691
+(Expected Sarsa) Episode 1400: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=6.131344840000001
+(Expected Sarsa) Episode 1500: Length=25  Total return = -9.25 Energy Left = 32
+    Median100=-12.25 Variance100=3.7792047499999994
+(Expected Sarsa) Episode 1600: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=2.434792999999999
+(Expected Sarsa) Episode 1700: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=0.57275475
+(Expected Sarsa) Episode 1800: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=0.6424179999999999
+(Expected Sarsa) Episode 1900: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=0.55937859
+(Expected Sarsa) Episode 2000: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=1.0345836399999997
+(Expected Sarsa) Episode 2100: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=2.0726627499999997
+(Expected Sarsa) Episode 2200: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=0.9313546399999999
+(Expected Sarsa) Episode 2300: Length=50  Total return = -17.049999999999997 Energy Left = 32
+    Median100=-12.25 Variance100=3.866510749999999
+(Expected Sarsa) Episode 2400: Length=7  Total return = -10.42 Energy Left = 32
+    Median100=-12.25 Variance100=6.526406760000001
+(Expected Sarsa) Episode 2500: Length=50  Total return = -12.850000000000001 Energy Left = 32
+    Median100=-12.25 Variance100=1.2702415599999997
+(Expected Sarsa) Episode 2600: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=5.0715087500000005
+(Expected Sarsa) Episode 2700: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=2.6866733099999993
+(Expected Sarsa) Episode 2800: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=1.33439531
+(Expected Sarsa) Episode 2900: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=2.6976773100000004
+(Expected Sarsa) Episode 3000: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=2.2100190000000004
+(Expected Sarsa) Episode 3100: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=4.541120190000001
+(Expected Sarsa) Episode 3200: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=9.299844749999998
+(Expected Sarsa) Episode 3300: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=2.375810589999999
+(Expected Sarsa) Episode 3400: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=1.2077317099999996
+(Expected Sarsa) Episode 3500: Length=36  Total return = -6.9399999999999995 Energy Left = 32
+    Median100=-12.25 Variance100=2.3727774399999997
+(Expected Sarsa) Episode 3600: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=4.03157299
+(Expected Sarsa) Episode 3700: Length=49  Total return = -2.6500000000000004 Energy Left = 32
+    Median100=-12.25 Variance100=2.6685287500000006
+(Expected Sarsa) Episode 3800: Length=19  Total return = -10.0 Energy Left = 32
+    Median100=-12.25 Variance100=3.49647059
+(Expected Sarsa) Episode 3900: Length=24  Total return = -9.4 Energy Left = 32
+    Median100=-12.25 Variance100=4.15035691
+(Expected Sarsa) Episode 4000: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=5.290021999999999
+(Expected Sarsa) Episode 4100: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=0.9430805900000001
+(Expected Sarsa) Episode 4200: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=3.7399060400000006
+(Expected Sarsa) Episode 4300: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=5.219666439999998
+(Expected Sarsa) Episode 4400: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=3.0409789999999997
+(Expected Sarsa) Episode 4500: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=1.3820240000000001
+(Expected Sarsa) Episode 4600: Length=3  Total return = -10.24 Energy Left = 32
+    Median100=-12.25 Variance100=36.19054836
+(Expected Sarsa) Episode 4700: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=11.069835039999996
+(Expected Sarsa) Episode 4800: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=1.86790819
+(Expected Sarsa) Episode 4900: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=49.05065384
+(Expected Sarsa) Episode 5000: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=5.072873790000001
+(Expected Sarsa) Episode 5100: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=0.5766401900000001
+(Expected Sarsa) Episode 5200: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=4.202954509999999
+(Expected Sarsa) Episode 5300: Length=17  Total return = -10.17 Energy Left = 32
+    Median100=-12.25 Variance100=3.183560999999999
+(Expected Sarsa) Episode 5400: Length=9  Total return = -10.45 Energy Left = 32
+    Median100=-12.25 Variance100=6.67168675
+(Expected Sarsa) Episode 5500: Length=50  Total return = -12.45 Energy Left = 32
+    Median100=-12.25 Variance100=1.8099505100000002
+(Expected Sarsa) Episode 5600: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=-12.25 Variance100=41.110619390000004
+(Expected Sarsa) Episode 5700: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.1 Variance100=37.888455759999985
+(Expected Sarsa) Episode 5800: Length=32  Total return = 3.08 Energy Left = 32
+    Median100=1.21 Variance100=2.1042019599999993
+(Expected Sarsa) Episode 5900: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=4.182434989999999
+(Expected Sarsa) Episode 6000: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.205 Variance100=10.44773219
+(Expected Sarsa) Episode 6100: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.17 Variance100=2.21829076
+(Expected Sarsa) Episode 6200: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=4.11691939
+(Expected Sarsa) Episode 6300: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=6.10975931
+(Expected Sarsa) Episode 6400: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=8.432397710000002
+(Expected Sarsa) Episode 6500: Length=20  Total return = 1.1 Energy Left = 32
+    Median100=1.21 Variance100=2.0998647500000005
+(Expected Sarsa) Episode 6600: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.4291047499999999
+(Expected Sarsa) Episode 6700: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.2349999999999999 Variance100=0.28675459000000003
+(Expected Sarsa) Episode 6800: Length=26  Total return = 1.9100000000000001 Energy Left = 32
+    Median100=1.21 Variance100=0.31375944
+(Expected Sarsa) Episode 6900: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.21 Variance100=0.22366874999999997
+(Expected Sarsa) Episode 7000: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.295 Variance100=0.29968539000000005
+(Expected Sarsa) Episode 7100: Length=34  Total return = 3.15 Energy Left = 32
+    Median100=1.21 Variance100=0.48075443999999995
+(Expected Sarsa) Episode 7200: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.1300000000000001 Variance100=0.20907019
+(Expected Sarsa) Episode 7300: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.5726827500000001
+(Expected Sarsa) Episode 7400: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.21 Variance100=0.17913874999999999
+(Expected Sarsa) Episode 7500: Length=24  Total return = 1.4 Energy Left = 32
+    Median100=1.21 Variance100=1.5895031600000005
+(Expected Sarsa) Episode 7600: Length=24  Total return = 1.6 Energy Left = 32
+    Median100=1.21 Variance100=0.27280804
+(Expected Sarsa) Episode 7700: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.2793301100000001
+(Expected Sarsa) Episode 7800: Length=20  Total return = 1.1 Energy Left = 32
+    Median100=1.21 Variance100=0.38502484000000003
+(Expected Sarsa) Episode 7900: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.13 Variance100=2.01381275
+(Expected Sarsa) Episode 8000: Length=20  Total return = 0.9 Energy Left = 32
+    Median100=1.21 Variance100=0.19656743999999995
+(Expected Sarsa) Episode 8100: Length=25  Total return = 1.75 Energy Left = 32
+    Median100=1.21 Variance100=2.1741051599999994
+(Expected Sarsa) Episode 8200: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.16720796
+(Expected Sarsa) Episode 8300: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.21053179000000002
+(Expected Sarsa) Episode 8400: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.21 Variance100=0.19729444000000002
+(Expected Sarsa) Episode 8500: Length=25  Total return = 1.75 Energy Left = 32
+    Median100=1.21 Variance100=0.4787993100000001
+(Expected Sarsa) Episode 8600: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.18458263999999996
+(Expected Sarsa) Episode 8700: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.21 Variance100=0.32767336
+(Expected Sarsa) Episode 8800: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.21 Variance100=0.28766459
+(Expected Sarsa) Episode 8900: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.23208763999999998
+(Expected Sarsa) Episode 9000: Length=20  Total return = 0.9000000000000001 Energy Left = 32
+    Median100=1.21 Variance100=0.33611259
+(Expected Sarsa) Episode 9100: Length=26  Total return = 1.9100000000000001 Energy Left = 32
+    Median100=1.21 Variance100=0.51784136
+(Expected Sarsa) Episode 9200: Length=28  Total return = 2.26 Energy Left = 32
+    Median100=1.21 Variance100=0.37164251
+(Expected Sarsa) Episode 9300: Length=20  Total return = 1.1 Energy Left = 32
+    Median100=1.21 Variance100=0.37718984000000005
+(Expected Sarsa) Episode 9400: Length=25  Total return = 1.75 Energy Left = 32
+    Median100=1.21 Variance100=0.35883200000000015
+(Expected Sarsa) Episode 9500: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.14636475000000002
+(Expected Sarsa) Episode 9600: Length=25  Total return = 1.55 Energy Left = 32
+    Median100=1.21 Variance100=0.23164984000000005
+(Expected Sarsa) Episode 9700: Length=21  Total return = 0.81 Energy Left = 32
+    Median100=1.21 Variance100=0.5033397100000001
+(Expected Sarsa) Episode 9800: Length=25  Total return = 1.75 Energy Left = 32
+    Median100=1.21 Variance100=0.5773960000000001
+(Expected Sarsa) Episode 9900: Length=38  Total return = 4.61 Energy Left = 32
+    Median100=1.33 Variance100=0.27089656
+(Expected Sarsa) Episode 10000: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.46373924
+(Expected Sarsa) Episode 10100: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=2.1293653899999994
+(Expected Sarsa) Episode 10200: Length=20  Total return = 0.9 Energy Left = 32
+    Median100=1.21 Variance100=0.30168578999999995
+(Expected Sarsa) Episode 10300: Length=27  Total return = 1.88 Energy Left = 32
+    Median100=1.21 Variance100=0.20824659
+(Expected Sarsa) Episode 10400: Length=20  Total return = 0.9 Energy Left = 32
+    Median100=1.21 Variance100=0.35392339000000006
+(Expected Sarsa) Episode 10500: Length=32  Total return = 3.08 Energy Left = 32
+    Median100=1.21 Variance100=1.7350404399999995
+(Expected Sarsa) Episode 10600: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.21 Variance100=2.2930581599999997
+(Expected Sarsa) Episode 10700: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=1.44227576
+(Expected Sarsa) Episode 10800: Length=34  Total return = 3.5500000000000003 Energy Left = 32
+    Median100=1.21 Variance100=0.42944415999999996
+(Expected Sarsa) Episode 10900: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.36174783999999993
+(Expected Sarsa) Episode 11000: Length=26  Total return = 1.71 Energy Left = 32
+    Median100=1.21 Variance100=0.37279491
+(Expected Sarsa) Episode 11100: Length=25  Total return = 1.55 Energy Left = 32
+    Median100=1.21 Variance100=0.5289099599999999
+(Expected Sarsa) Episode 11200: Length=24  Total return = 1.4 Energy Left = 32
+    Median100=1.21 Variance100=1.5598301100000003
+(Expected Sarsa) Episode 11300: Length=23  Total return = 1.06 Energy Left = 32
+    Median100=1.21 Variance100=0.71108579
+(Expected Sarsa) Episode 11400: Length=26  Total return = 1.31 Energy Left = 32
+    Median100=1.21 Variance100=0.21935875
+(Expected Sarsa) Episode 11500: Length=20  Total return = 0.9000000000000001 Energy Left = 32
+    Median100=1.21 Variance100=0.36662939
+(Expected Sarsa) Episode 11600: Length=25  Total return = 1.75 Energy Left = 32
+    Median100=1.2349999999999999 Variance100=0.26311316
+(Expected Sarsa) Episode 11700: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.30120771
+(Expected Sarsa) Episode 11800: Length=25  Total return = 1.35 Energy Left = 32
+    Median100=1.21 Variance100=1.7462771600000002
+(Expected Sarsa) Episode 11900: Length=27  Total return = 2.08 Energy Left = 32
+    Median100=1.21 Variance100=0.27417196000000005
+(Expected Sarsa) Episode 12000: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.35775211000000007
+(Expected Sarsa) Episode 12100: Length=25  Total return = 1.75 Energy Left = 32
+    Median100=1.21 Variance100=0.24509730999999996
+(Expected Sarsa) Episode 12200: Length=27  Total return = 2.08 Energy Left = 32
+    Median100=1.21 Variance100=0.326943
+(Expected Sarsa) Episode 12300: Length=20  Total return = 1.1 Energy Left = 32
+    Median100=1.21 Variance100=0.11188770999999999
+(Expected Sarsa) Episode 12400: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.21 Variance100=0.54001619
+(Expected Sarsa) Episode 12500: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=1.5268024400000002
+(Expected Sarsa) Episode 12600: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.3326489100000001
+(Expected Sarsa) Episode 12700: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.32644075
+(Expected Sarsa) Episode 12800: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.41224115999999994
+(Expected Sarsa) Episode 12900: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=2.0265259600000003
+(Expected Sarsa) Episode 13000: Length=20  Total return = 1.1 Energy Left = 32
+    Median100=1.21 Variance100=0.27153000000000005
+(Expected Sarsa) Episode 13100: Length=24  Total return = 1.6 Energy Left = 32
+    Median100=1.21 Variance100=0.31927579
+(Expected Sarsa) Episode 13200: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.21 Variance100=0.32487875000000005
+(Expected Sarsa) Episode 13300: Length=20  Total return = 0.9000000000000001 Energy Left = 32
+    Median100=1.21 Variance100=0.29721971
+(Expected Sarsa) Episode 13400: Length=24  Total return = 1.4 Energy Left = 32
+    Median100=1.21 Variance100=0.4575884400000001
+(Expected Sarsa) Episode 13500: Length=20  Total return = 1.1 Energy Left = 32
+    Median100=1.21 Variance100=0.19719810999999995
+(Expected Sarsa) Episode 13600: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.21 Variance100=0.6827020399999999
+(Expected Sarsa) Episode 13700: Length=20  Total return = 0.9000000000000001 Energy Left = 32
+    Median100=1.21 Variance100=0.32541464000000003
+(Expected Sarsa) Episode 13800: Length=20  Total return = 0.8999999999999999 Energy Left = 32
+    Median100=1.21 Variance100=0.34445196
+(Expected Sarsa) Episode 13900: Length=27  Total return = 2.08 Energy Left = 32
+    Median100=1.21 Variance100=0.41795696
+(Expected Sarsa) Episode 14000: Length=21  Total return = 1.01 Energy Left = 32
+    Median100=1.21 Variance100=1.7999121100000008
+(Expected Sarsa) Episode 14100: Length=20  Total return = 1.1 Energy Left = 32
+    Median100=1.21 Variance100=0.23470891000000002
+(Expected Sarsa) Episode 14200: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.28712851000000006
+(Expected Sarsa) Episode 14300: Length=25  Total return = 1.75 Energy Left = 32
+    Median100=1.21 Variance100=0.6654121900000001
+(Expected Sarsa) Episode 14400: Length=21  Total return = 1.01 Energy Left = 32
+    Median100=1.21 Variance100=1.76247304
+(Expected Sarsa) Episode 14500: Length=28  Total return = 2.06 Energy Left = 32
+    Median100=1.21 Variance100=1.538422
+(Expected Sarsa) Episode 14600: Length=20  Total return = 1.1 Energy Left = 32
+    Median100=1.21 Variance100=0.16018464
+(Expected Sarsa) Episode 14700: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.1 Variance100=0.38509618999999995
+(Expected Sarsa) Episode 14800: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.13 Variance100=0.23879538999999997
+(Expected Sarsa) Episode 14900: Length=23  Total return = 1.26 Energy Left = 32
+    Median100=1.21 Variance100=1.6418377900000005
+(Expected Sarsa) Episode 15000: Length=25  Total return = 1.35 Energy Left = 32
+    Median100=1.21 Variance100=0.25505664
+(Expected Sarsa) Episode 15100: Length=27  Total return = 2.08 Energy Left = 32
+    Median100=1.295 Variance100=0.72026659
+(Expected Sarsa) Episode 15200: Length=26  Total return = 1.9100000000000001 Energy Left = 32
+    Median100=1.21 Variance100=0.30320464
+(Expected Sarsa) Episode 15300: Length=20  Total return = 1.1 Energy Left = 32
+    Median100=1.21 Variance100=0.7026268400000001
+(Expected Sarsa) Episode 15400: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.115 Variance100=0.20147859
+(Expected Sarsa) Episode 15500: Length=31  Total return = 2.86 Energy Left = 32
+    Median100=1.21 Variance100=0.14878939000000002
+(Expected Sarsa) Episode 15600: Length=23  Total return = 1.26 Energy Left = 32
+    Median100=1.21 Variance100=0.26593464
+(Expected Sarsa) Episode 15700: Length=33  Total return = 3.31 Energy Left = 32
+    Median100=1.21 Variance100=0.27096811000000004
+(Expected Sarsa) Episode 15800: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.44864844
+(Expected Sarsa) Episode 15900: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.25878771000000006
+(Expected Sarsa) Episode 16000: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.365 Variance100=0.3529800400000001
+(Expected Sarsa) Episode 16100: Length=33  Total return = 3.31 Energy Left = 32
+    Median100=1.21 Variance100=0.24804904
+(Expected Sarsa) Episode 16200: Length=22  Total return = 1.33 Energy Left = 32
+    Median100=1.21 Variance100=0.23305636
+(Expected Sarsa) Episode 16300: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.20955744000000004
+(Expected Sarsa) Episode 16400: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.26284075000000007
+(Expected Sarsa) Episode 16500: Length=30  Total return = 2.45 Energy Left = 32
+    Median100=1.21 Variance100=1.4709053100000005
+(Expected Sarsa) Episode 16600: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.19369299000000006
+(Expected Sarsa) Episode 16700: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.57051136
+(Expected Sarsa) Episode 16800: Length=20  Total return = 1.1 Energy Left = 32
+    Median100=1.21 Variance100=0.28659976
+(Expected Sarsa) Episode 16900: Length=23  Total return = 1.46 Energy Left = 32
+    Median100=1.13 Variance100=1.60870836
+(Expected Sarsa) Episode 17000: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.19727936
+(Expected Sarsa) Episode 17100: Length=21  Total return = 0.81 Energy Left = 32
+    Median100=1.21 Variance100=0.34891099000000003
+(Expected Sarsa) Episode 17200: Length=30  Total return = 2.65 Energy Left = 32
+    Median100=1.17 Variance100=0.24622619
+(Expected Sarsa) Episode 17300: Length=22  Total return = 1.33 Energy Left = 32
+    Median100=1.21 Variance100=0.19568050999999995
+(Expected Sarsa) Episode 17400: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.43619570999999996
+(Expected Sarsa) Episode 17500: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.27638930999999994
+(Expected Sarsa) Episode 17600: Length=26  Total return = 1.71 Energy Left = 32
+    Median100=1.21 Variance100=1.5385760000000008
+(Expected Sarsa) Episode 17700: Length=20  Total return = 1.1 Energy Left = 32
+    Median100=1.21 Variance100=0.25201819000000014
+(Expected Sarsa) Episode 17800: Length=21  Total return = 0.81 Energy Left = 32
+    Median100=1.21 Variance100=0.23870299
+(Expected Sarsa) Episode 17900: Length=29  Total return = 2.45 Energy Left = 32
+    Median100=1.21 Variance100=1.6167443599999995
+(Expected Sarsa) Episode 18000: Length=27  Total return = 2.08 Energy Left = 32
+    Median100=1.21 Variance100=0.25440874999999996
+(Expected Sarsa) Episode 18100: Length=28  Total return = 2.26 Energy Left = 32
+    Median100=1.21 Variance100=0.35491971000000005
+(Expected Sarsa) Episode 18200: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.24178316000000002
+(Expected Sarsa) Episode 18300: Length=20  Total return = 1.1 Energy Left = 32
+    Median100=1.21 Variance100=1.56058075
+(Expected Sarsa) Episode 18400: Length=20  Total return = 0.9000000000000001 Energy Left = 32
+    Median100=1.21 Variance100=0.42631139000000007
+(Expected Sarsa) Episode 18500: Length=25  Total return = 1.75 Energy Left = 32
+    Median100=1.21 Variance100=0.36549979
+(Expected Sarsa) Episode 18600: Length=30  Total return = 2.65 Energy Left = 32
+    Median100=1.21 Variance100=0.23116404000000002
+(Expected Sarsa) Episode 18700: Length=25  Total return = 1.75 Energy Left = 32
+    Median100=1.21 Variance100=1.3846461099999998
+(Expected Sarsa) Episode 18800: Length=50  Total return = -12.25 Energy Left = 32
+    Median100=1.0 Variance100=41.92721676
+(Expected Sarsa) Episode 18900: Length=27  Total return = 1.8800000000000001 Energy Left = 32
+    Median100=1.115 Variance100=35.962766110000004
+(Expected Sarsa) Episode 19000: Length=26  Total return = 1.9100000000000001 Energy Left = 32
+    Median100=1.21 Variance100=2.26323244
+(Expected Sarsa) Episode 19100: Length=25  Total return = 1.75 Energy Left = 32
+    Median100=1.21 Variance100=7.866072760000001
+(Expected Sarsa) Episode 19200: Length=22  Total return = 1.13 Energy Left = 32
+    Median100=1.21 Variance100=0.30934931000000004
+(Expected Sarsa) Episode 19300: Length=21  Total return = 1.21 Energy Left = 32
+    Median100=1.21 Variance100=0.9623616400000001
+(Expected Sarsa) Episode 19400: Length=20  Total return = 0.8999999999999999 Energy Left = 32
+    Median100=1.21 Variance100=0.35320964000000005
+(Expected Sarsa) Episode 19500: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.39467539
+(Expected Sarsa) Episode 19600: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.5099929900000001
+(Expected Sarsa) Episode 19700: Length=22  Total return = 0.7300000000000001 Energy Left = 32
+    Median100=1.21 Variance100=0.24751371
+(Expected Sarsa) Episode 19800: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=0.28435836000000003
+(Expected Sarsa) Episode 19900: Length=19  Total return = 1.0 Energy Left = 32
+    Median100=1.21 Variance100=4.12482475
+game over -- Algorithm Expected Sarsa completed
+Expected Sarsa : max reward = 8.35 medLast100=1.21 varLast100=0.53512859
