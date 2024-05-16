@@ -41,7 +41,7 @@ def update(env, RL, data, episodes=50):
         if episode == 0:
             state = env.reset(value = 0)
         else:
-            state = env.reset()
+            state = env.reset(episodeVal = episode)
        
         debug(2,'state(ep:{},t:{})={}'.format(episode, t, state))
 
@@ -71,7 +71,7 @@ def update(env, RL, data, episodes=50):
                 break
             else:
                 t=t+1
-
+        
         debug(1,"({}) Episode {}: Length={}  Total return = {} ".format(RL.display_name,episode, t,  global_reward[episode],global_reward[episode]),printNow=(episode%printEveryNth==0))
         if(episode>=100):
             debug(1,"    Median100={} Variance100={}".format(np.median(global_reward[episode-100:episode]),np.var(global_reward[episode-100:episode])),printNow=(episode%printEveryNth==0))

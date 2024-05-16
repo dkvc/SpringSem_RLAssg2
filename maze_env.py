@@ -85,8 +85,61 @@ class Maze(tk.Tk, object):
             agent_center[0] - 15, agent_center[1] - 15,
             agent_center[0] + 15, agent_center[1] + 15,
             fill='red')
+        
+    def is_collision(self, bbox1, bbox2):
+        # Check if two bounding boxes collide
+        return not (bbox2[0] > bbox1[2] or bbox2[2] < bbox1[0] or bbox2[1] > bbox1[3] or bbox2[3] < bbox1[1])
+        
+    def update_dynamic_elements(self):
+        # Move a randomly selected obstacle to a neighboring grid cell if possible
+        for obstacle_to_move in self.pitblocks:
+            #obstacle_to_move = random.choice(self.pitblocks)
+            current_x, current_y = self.canvas.coords(obstacle_to_move)[:2]
 
-    def reset(self, value = 1, resetAgent=True):
+            # Calculate grid indices for current position
+            current_grid_x = int(current_x / UNIT)
+            current_grid_y = int(current_y / UNIT)
+
+            # Define possible neighboring grid cells
+            # move offset [-2, -1, 0, 1, 2] in x and y direction
+            move_offset = random.choice([-2, -1, 0, 1, 2])
+            neighboring_grids = [(current_grid_x - move_offset, current_grid_y),  # left
+                                (current_grid_x + move_offset, current_grid_y),  # right
+                                (current_grid_x, current_grid_y - move_offset),  # up
+                                (current_grid_x, current_grid_y + move_offset),  # down
+                                (current_grid_x + move_offset, current_grid_y + move_offset),  # down-right
+                                (current_grid_x - move_offset, current_grid_y - move_offset),  # up-left
+                                (current_grid_x - move_offset, current_grid_y + move_offset),  # down-left
+                                (current_grid_x + move_offset, current_grid_y - move_offset)  # up-right
+                                ]
+
+            # Filter valid neighboring grid cells that stay within the maze
+            valid_grids = [(x, y) for x, y in neighboring_grids
+                        if 0 <= x < MAZE_W and 0 <= y < MAZE_H]
+
+            if valid_grids:
+                # Randomly select a neighboring grid cell to move to
+                new_grid_x, new_grid_y = random.choice(valid_grids)
+
+                # Calculate new position within the selected grid cell
+                new_x = new_grid_x * UNIT + UNIT / 2
+                new_y = new_grid_y * UNIT + UNIT / 2
+
+                # Check for collision with the circle (goal) and walls
+                circle_bbox = self.canvas.coords(self.goal)
+                wall_collisions = any(self.is_collision((new_x - 15, new_y - 15, new_x + 15, new_y + 15), self.canvas.coords(wall)) for wall in self.wallblocks)
+                obstacle_collisions = any(self.is_collision((new_x - 15, new_y - 15, new_x + 15, new_y + 15), self.canvas.coords(obstacle)) for obstacle in self.pitblocks if obstacle != obstacle_to_move)
+            
+                if self.is_collision((new_x - 15, new_y - 15, new_x + 15, new_y + 15), circle_bbox) or wall_collisions or obstacle_collisions:
+                    print("Collision detected. Obstacle cannot be moved.")
+                else:
+                    # Move the obstacle to the new position
+                    self.canvas.coords(obstacle_to_move, new_x - 15, new_y - 15, new_x + 15, new_y + 15)
+
+
+    def reset(self, value = 1, resetAgent=True, episodeVal=0):
+        if episodeVal and episodeVal % 5 == 0:
+            self.update_dynamic_elements()
         self.update()
         time.sleep(0.2)
         if(value == 0):
