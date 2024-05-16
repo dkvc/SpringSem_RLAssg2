@@ -18,7 +18,7 @@ origin = np.array([UNIT/2, UNIT/2])
 class Maze(tk.Tk, object):
     def __init__(self, agentXY, goalXY, walls=[],pits=[]):
         super(Maze, self).__init__()
-        self.action_space = ['u', 'd', 'l', 'r']
+        self.action_space = ['u', 'd', 'l', 'r', 'ur', 'ul', 'dr', 'dl']
         self.n_actions = len(self.action_space)
         self.wallblocks = []
         self.pitblocks=[]
@@ -141,6 +141,22 @@ class Maze(tk.Tk, object):
                 base_action[0] += UNIT
         elif action == 3:   # left
             if s[0] > UNIT:
+                base_action[0] -= UNIT
+        elif action == 4:   # up-right
+            if s[1] > UNIT and s[0] < (MAZE_W - 1) * UNIT:
+                base_action[1] -= UNIT
+                base_action[0] += UNIT
+        elif action == 5:   # up-left
+            if s[1] > UNIT and s[0] > UNIT:
+                base_action[1] -= UNIT
+                base_action[0] -= UNIT
+        elif action == 6:   # down-right
+            if s[1] < (MAZE_H - 1) * UNIT and s[0] < (MAZE_W - 1) * UNIT:
+                base_action[1] += UNIT
+                base_action[0] += UNIT
+        elif action == 7:   # down-left
+            if s[1] < (MAZE_H - 1) * UNIT and s[0] > UNIT:
+                base_action[1] += UNIT
                 base_action[0] -= UNIT
 
         self.canvas.move(self.agent, base_action[0], base_action[1])  # move agent
