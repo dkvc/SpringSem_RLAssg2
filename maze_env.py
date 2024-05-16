@@ -10,8 +10,8 @@ else:
 
 
 UNIT = 40   # pixels per cell (width and height)
-MAZE_H = 10  # height of the entire grid in cells
-MAZE_W = 10  # width of the entire grid in cells
+MAZE_H = 20  # height of the entire grid in cells
+MAZE_W = 20  # width of the entire grid in cells
 origin = np.array([UNIT/2, UNIT/2])
 
 
