@@ -1,17 +1,28 @@
 import numpy as np
 import pandas as pd
+import random
 
 
 class rlalgorithm:
 
-    def __init__(self, actions, learning_rate=0.01, reward_decay=0.9, e_greedy=0.1):
+    def __init__(self, actions, learning_rate=0.01, reward_decay=0.9, e_greedy=0.1, buffer_size=1000):
         self.actions = actions  
         self.lr = learning_rate
         self.gamma = reward_decay
         self.epsilon = e_greedy
         self.q_table = pd.DataFrame(columns=self.actions, dtype=np.float64)
+        self.buffer = []
+        self.buffer_size = buffer_size
+        self.buffer_idx = 0
         self.display_name="Expected Sarsa"
-        print("Using Expected Sarsa ...")
+        print(f"Using {self.display_name} ...")
+
+    def store_experience(self, state, action, reward, next_state):
+        if len(self.buffer) < self.buffer_size:
+            self.buffer.append((state, action, reward, next_state))
+        else:
+            self.buffer[self.buffer_idx] = (state, action, reward, next_state)
+            self.buffer_idx = (self.buffer_idx + 1) % self.buffer_size
 
     '''Choose the next action to take given the observed state using an epsilon greedy policy'''
     def choose_action(self, observation):
@@ -28,13 +39,29 @@ class rlalgorithm:
             action = np.random.choice(self.actions)
 
         return action
+    
+    def sample_batch(self, batch_size):
+        return random.sample(self.buffer, batch_size)
+    
+    def learn_from_batch(self, batch):
+        for state, action, reward, next_state in batch:
+            q_current = self.q_table.loc[state, action]
+            if next_state != 'terminal':
+                q_next = max(self.q_table.loc[next_state])
+                q_target = reward + self.gamma * q_next
+            else:
+                q_target = reward
+            self.q_table.loc[state, action] += self.lr * (q_target - q_current)
 
-
-    '''Update the Q(S,A) state-action value table using the latest experience
-       This is a not a very good learning update 
-    '''
     def learn(self, s, a, r, s_):
         self.check_state_exist(s_)
+        self.store_experience(s, a, r, s_)
+
+        if len(self.buffer) > 32:
+            print("Replaying memory...")
+            batch = self.sample_batch(batch_size=32)
+            self.learn_from_batch(batch)
+
         q_current = self.q_table.loc[s, a]
 
         if s_ != 'terminal':

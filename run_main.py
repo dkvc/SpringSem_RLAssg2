@@ -109,8 +109,8 @@ if __name__ == "__main__":
     goalXY=[4,4]
 
     #Task 1
-    wall_shape=np.array([[7,7],[4,6]])
-    pits=np.array([[6,3],[2,6]])
+    wall_shape=np.array([[7,7],[4,6],[8,10],[15,15],[18,5]])
+    pits=np.array([[6,3],[2,6],[8,8],[5,15],[10,5]])
 
     # # Task 2
     # wall_shape=np.array([[5,2],[4,2],[3,2],[3,3],[3,4],[3,5],[3,6],[4,6],[5,6]])
