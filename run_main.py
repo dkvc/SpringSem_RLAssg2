@@ -72,7 +72,7 @@ def update(env, RL, data, episodes=50):
             else:
                 t=t+1
 
-        debug(1,"({}) Episode {}: Length={}  Total return = {} ".format(RL.display_name,episode, t,  global_reward[episode],global_reward[episode]),printNow=(episode%printEveryNth==0))
+        debug(1,"({}) Episode {}: Length={}  Total return = {} Energy Left = {}".format(RL.display_name,episode, t,  global_reward[episode], env.max_energy),printNow=(episode%printEveryNth==0))
         if(episode>=100):
             debug(1,"    Median100={} Variance100={}".format(np.median(global_reward[episode-100:episode]),np.var(global_reward[episode-100:episode])),printNow=(episode%printEveryNth==0))
     # end of game
@@ -91,7 +91,7 @@ if __name__ == "__main__":
 
     #Exmaple Full Run, you may need to run longer
     showRender=False
-    episodes=2000
+    episodes=20000
     renderEveryNth=10000
     printEveryNth=100
     do_plot_rewards=True
@@ -106,19 +106,20 @@ if __name__ == "__main__":
 
     #All Tasks
     agentXY=[0,0]
-    goalXY=[14,12]
+    #goalXY=[14,12]
+    goalXY=[4,4]
 
     #Task 1
-    wall_shape=np.array([[7,7],[2,3],[5,7],[3, 3],[2,4],[4,7],[4,8],[14,10],[15,10],[15,9],[15,15],[18,5]])
-    pits=np.array([[6,3],[2,6],[8,8],[5,15],[10,5]])
+    #wall_shape=np.array([[7,7],[2,3],[5,7],[3, 3],[2,4],[4,7],[4,8],[14,10],[15,10],[15,9],[15,15],[18,5]])
+    #pits=np.array([[6,3],[2,6],[8,8],[5,15],[10,5]])
 
     # # Task 2
     # wall_shape=np.array([[5,2],[4,2],[3,2],[3,3],[3,4],[3,5],[3,6],[4,6],[5,6]])
     # pits=[]
 
     #Task 3
-    #wall_shape=np.array([[7,4],[7,3],[6,3],[6,2],[5,2],[4,2],[3,2],[3,3],[3,4],[3,5],[3,6],[4,6],[5,6]])
-    #pits=np.array([[1,3],[0,5], [7,7]])
+    wall_shape=np.array([[7,4],[7,3],[6,3],[6,2],[5,2],[4,2],[3,2],[3,3],[3,4],[3,5],[3,6],[4,6],[5,6]])
+    pits=np.array([[1,3],[0,5], [7,7]])
 
     experiments = []
 

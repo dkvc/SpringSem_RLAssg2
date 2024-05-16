@@ -10,13 +10,13 @@ else:
 
 
 UNIT = 40   # pixels per cell (width and height)
-MAZE_H = 20  # height of the entire grid in cells
-MAZE_W = 20  # width of the entire grid in cells
+MAZE_H = 10  # height of the entire grid in cells
+MAZE_W = 10  # width of the entire grid in cells
 origin = np.array([UNIT/2, UNIT/2])
 
 
 class Maze(tk.Tk, object):
-    def __init__(self, agentXY, goalXY, walls=[],pits=[]):
+    def __init__(self, agentXY, goalXY, walls=[],pits=[], energy_capacity=50, energy_factor=0.01):
         super(Maze, self).__init__()
         self.action_space = ['u', 'd', 'l', 'r']
         self.n_actions = len(self.action_space)
@@ -25,6 +25,10 @@ class Maze(tk.Tk, object):
         self.UNIT = 40   # pixels per cell (width and height)
         self.MAZE_H = 10  # height of the entire grid in cells
         self.MAZE_W = 10  # width of the entire grid in cells
+        self.energy_capacity = energy_capacity
+        self.energy_factor = energy_factor
+        self.energy = energy_capacity
+        self.max_energy = 0
         self.title('maze')
         self.geometry('{0}x{1}'.format(MAZE_H * UNIT, MAZE_W * UNIT))
         self.build_shape_maze(agentXY, goalXY, walls, pits)
@@ -98,16 +102,23 @@ class Maze(tk.Tk, object):
                 self.agent = self.canvas.create_rectangle(origin[0] - 15, origin[1] - 15,
                 origin[0] + 15, origin[1] + 15,
                 fill='red')
+                self.energy = self.energy_capacity
 
             return self.canvas.coords(self.agent)
 
     '''computeReward - definition of reward function'''
     def computeReward(self, currstate, action, nextstate):
             reverse=False
-            if nextstate == self.canvas.coords(self.goal):
+            if self.energy < 0:
+                reward = -20
+                done = True
+                nextstate = 'terminal'
+                reverse = True
+            elif nextstate == self.canvas.coords(self.goal):
                 reward = 1
                 done = True
                 nextstate = 'terminal'
+                self.max_energy = max(self.max_energy, self.energy)
             #elif nextstate in [self.canvas.coords(self.pit1), self.canvas.coords(self.pit2)]:
             elif nextstate in [self.canvas.coords(w) for w in self.wallblocks]:
                 reward = -0.3
@@ -124,6 +135,9 @@ class Maze(tk.Tk, object):
             else:
                 reward = -0.1
                 done = False
+
+            if not done:
+                reward += self.energy_factor * (self.energy_capacity - self.energy)
             return reward,done, reverse
 
     '''step - definition of one-step dynamics function'''
@@ -150,11 +164,13 @@ class Maze(tk.Tk, object):
         #print("s_:{}({})".format(s_, type(s_)))
 
         # call the reward function
+        self.energy -= 1
         reward, done, reverse = self.computeReward(s, action, s_)
         if(reverse):
             self.canvas.move(self.agent, -base_action[0], -base_action[1])  # move agent back
-            s_ = self.canvas.coords(self.agent)  
+            s_ = self.canvas.coords(self.agent)
 
+        #print(f"Energy: {self.energy}, Reward: {reward}, Done: {done}")
         return s_, reward, done
 
     def render(self, sim_speed=.01):
