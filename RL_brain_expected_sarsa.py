@@ -11,7 +11,7 @@ class rlalgorithm:
         self.epsilon = e_greedy
         self.q_table = pd.DataFrame(columns=self.actions, dtype=np.float64)
         self.display_name="Expected Sarsa"
-        print("Using Expected Sarsa ...")
+        print(f"Using {self.display_name} ...")
 
     '''Choose the next action to take given the observed state using an epsilon greedy policy'''
     def choose_action(self, observation):
