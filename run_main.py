@@ -1,14 +1,8 @@
 from maze_env import Maze
-from RL_brainsample_PI import rlalgorithm as rlalg0
-from RL_brain_q_learning import rlalgorithm as rlalg1
-from RL_brain_sarsa import rlalgorithm as rlalg2
 from RL_brain_expected_sarsa import rlalgorithm as rlalg4
-from RL_brain_sarsa_lambda import rlalgorithm as rlalg5
 import numpy as np
 import sys
 import matplotlib.pyplot as plt
-import pickle
-import time
 
 DEBUG=1
 def debug(debuglevel, msg, **kwargs):
@@ -128,31 +122,6 @@ if __name__ == "__main__":
 
     experiments = []
 
-    # # alg0 (Aynsc)
-    # env0 = Maze(agentXY,goalXY,wall_shape, pits)
-    # RL0 = rlalg0(actions=list(range(env0.n_actions)))
-    # data0={}
-    # env0.after(10, update(env0, RL0, data0, episodes))
-    # env0.mainloop()
-    # experiments = [(env0,RL0, data0)]
-
-    # alg2 (SARSA)
-    env2 = Maze(agentXY,goalXY,wall_shape,pits)
-    RL2 = rlalg2(actions=list(range(env2.n_actions)))
-    data2={}
-    env2.after(10, update(env2, RL2, data2, episodes))
-    env2.mainloop()
-    experiments.append((env2,RL2, data2))
-
-    # alg1 (Q-Learning)
-    env1 = Maze(agentXY,goalXY,wall_shape, pits)
-    RL1 = rlalg1(actions=list(range(env1.n_actions)))
-    data1={}
-    env1.after(10, update(env1, RL1, data1, episodes))
-    env1.mainloop()
-    experiments.append((env1,RL1, data1))
-
-    # alg4 (Expected Sarsa)
     env4 = Maze(agentXY,goalXY,wall_shape,pits)
     RL4 = rlalg4(actions=list(range(env4.n_actions)))
     data4={}
@@ -160,26 +129,9 @@ if __name__ == "__main__":
     env4.mainloop()
     experiments.append((env4,RL4, data4))
 
-    # alg5 (SARSA_lambda)
-    env5 = Maze(agentXY,goalXY,wall_shape,pits)
-    RL5 = rlalg5(actions=list(range(env5.n_actions)))
-    data5={}
-    env5.after(10, update(env5, RL5, data5, episodes))
-    env5.mainloop()
-    experiments.append((env5,RL5, data5))
-
-    print("All experiments complete")
-
     for env, RL, data in experiments:
         print("{} : max reward = {} medLast100={} varLast100={}".format(RL.display_name, np.max(data['global_reward']),np.median(data['global_reward'][-100:]), np.var(data['global_reward'][-100:])))
 
 
     if(do_plot_rewards):
-        #Simple plot of return for each episode and algorithm, you can make more informative plots
         plot_rewards(experiments)
-
-    #Not implemented yet
-    #if(do_save_data):
-    #    for env, RL, data in experiments:
-    #        saveData(env,RL,data)
-
