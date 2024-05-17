@@ -178,6 +178,7 @@ class Maze(tk.Tk, object):
         self.update()
 
     def run_without_learning(self, agent, episodes=10, sim_speed=0.01):
+        energies = []
         for _ in range(episodes):
             s = self.reset()
             while True:
@@ -185,12 +186,9 @@ class Maze(tk.Tk, object):
                 a = agent.choose_action(str(s))
                 s_, r, done = self.step(a)
                 if done:
+                    energies.append(self.max_energy)
+                    print(f"Energy: {self.max_energy}, Reward: {r}")
                     break
                 s = s_
-
+        print(f"Max Energy: {max(energies)}")
         self.destroy()
-
-if __name__ == '__main__':
-    env = Maze()
-    env.after(100, update)
-    env.mainloop()
