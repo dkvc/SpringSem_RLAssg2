@@ -177,18 +177,18 @@ class Maze(tk.Tk, object):
         time.sleep(sim_speed)
         self.update()
 
+    def run_without_learning(self, agent, episodes=10, sim_speed=0.01):
+        for _ in range(episodes):
+            s = self.reset()
+            while True:
+                self.render(sim_speed)
+                a = agent.choose_action(str(s))
+                s_, r, done = self.step(a)
+                if done:
+                    break
+                s = s_
 
-def update():
-    for t in range(10):
-        print("The value of t is", t)
-        s = env.reset()
-        while True:
-            env.render()
-            a = 1
-            s, r, done = env.step(a)
-            if done:
-                break
-
+        self.destroy()
 
 if __name__ == '__main__':
     env = Maze()

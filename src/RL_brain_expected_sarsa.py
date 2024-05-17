@@ -1,6 +1,8 @@
+import os
+import pickle
+
 import numpy as np
 import pandas as pd
-
 
 class rlalgorithm:
 
@@ -63,3 +65,12 @@ class rlalgorithm:
     def check_state_exist(self, state):
         if state not in self.q_table.index:
             self.q_table = pd.concat([self.q_table, pd.DataFrame([[0]*len(self.actions)], columns=self.q_table.columns, index=[state])])
+
+    def save(self, filename):
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        with open(filename, 'wb') as file:
+            pickle.dump(self.q_table, file)
+
+    def load(self, filename):
+        with open(filename, 'rb') as file:
+            self.q_table = pickle.load(file)
